@@ -61,4 +61,4 @@ function Check-EventAndNotify {
 Check-EventAndNotify -eventId 174 -messageTitle "Power Outage!" -messageBody "Power Outage on $($env:COMPUTERNAME) - UPS on battery."
 
 # Controllo dell'evento 61455 (Alimentazione ripristinata)
-Check-EventAndNotify -eventId 61455 -messageTitle "Power restored" -messageBody "Power restored on $($env:COMPUTERNAME) - UPS on line power.."
+Check-EventAndNotify -eventId 61455 -messageTitle "Power restored" -messageBody "Power restored on $($env:COMPUTERNAME)"
