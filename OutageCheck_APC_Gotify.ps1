@@ -6,7 +6,7 @@ $gotifyEndpoint = "$($gotifyUrl):$GotifyPort/message"
 
 # Parametri dell'evento
 $eventSource = "APC UPS Service"
-$timeThreshold = 3  # Chek if the event are new
+$timeThreshold = 10  # Chek if the event are new
 
 # Funzione per inviare notifiche a Gotify
 function Send-GotifyNotification {
