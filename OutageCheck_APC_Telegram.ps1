@@ -5,7 +5,7 @@ $telegramUrl = "https://api.telegram.org/bot$telegramToken/sendMessage"
 
 # Parametri dell'evento
 $eventSource = "APC UPS Service"
-$timeThresholdMinutes = 1  # Check event age
+$timeThreshold = 3  # Seconds age check (Default 3 seconds)
 
 # Funzione per inviare notifiche a Telegram
 function Send-TelegramNotification {
@@ -41,12 +41,12 @@ function Check-EventAndNotify {
     if ($event) {
         $eventTime = [DateTime]$event.TimeCreated
         $currentTime = Get-Date
-        $timeDifference = ($currentTime - $eventTime).TotalMinutes
+        $timeDifference = ($currentTime - $eventTime).TotalSeconds
 
-        if ($timeDifference -le $timeThresholdMinutes) {
+        if ($timeDifference -le $timeThreshol) {
             Send-TelegramNotification -messageText $messageText
         } else {
-            Write-Output "Evento $eventId trovato, ma è più vecchio di $timeThresholdMinutes minuti. Nessuna notifica inviata."
+            Write-Output "Evento $eventId trovato, ma è più vecchio di $timeThreshold secondi. Nessuna notifica inviata."
         }
     } else {
         Write-Output "Nessun evento $eventId rilevato."
