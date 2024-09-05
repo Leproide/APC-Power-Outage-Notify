@@ -43,7 +43,7 @@ function Check-EventAndNotify {
         $currentTime = Get-Date
         $timeDifference = ($currentTime - $eventTime).TotalSeconds
 
-        if ($timeDifference -le $timeThreshol) {
+        if ($timeDifference -le $timeThreshold) {
             Send-TelegramNotification -messageText $messageText
         } else {
             Write-Output "Evento $eventId trovato, ma è più vecchio di $timeThreshold secondi. Nessuna notifica inviata."
