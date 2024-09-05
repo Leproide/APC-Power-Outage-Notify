@@ -5,7 +5,7 @@ $telegramUrl = "https://api.telegram.org/bot$telegramToken/sendMessage"
 
 # Parametri dell'evento
 $eventSource = "APC UPS Service"
-$timeThreshold = 3  # Seconds age check (Default 3 seconds)
+$timeThreshold = 10  # Seconds age check (Default 3 seconds)
 
 # Funzione per inviare notifiche a Telegram
 function Send-TelegramNotification {
