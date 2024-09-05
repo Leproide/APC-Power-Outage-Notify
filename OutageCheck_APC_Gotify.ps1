@@ -47,7 +47,7 @@ function Check-EventAndNotify {
         $currentTime = Get-Date
         $timeDifference = ($currentTime - $eventTime).TotalSeconds
 
-        if ($timeDifference -le $timeThresholdSeconds) {
+        if ($timeDifference -le $timeThreshold) {
             Send-GotifyNotification -messageTitle $messageTitle -messageBody $messageBody
         } else {
             Write-Output "Evento $eventId trovato, ma è più vecchio di $timeThreshold secondi. Nessuna notifica inviata."
