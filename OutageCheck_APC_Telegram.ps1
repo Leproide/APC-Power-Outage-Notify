@@ -1,6 +1,6 @@
 # Telegram Parameters
 $telegramToken = "your:token"  # Your bot token
-$chatId = "-100123456789"  # Your chat ID
+$chatId = "-1234567890"  # Your chat ID
 $telegramUrl = "https://api.telegram.org/bot$telegramToken/sendMessage"
 
 # Parametri dell'evento
