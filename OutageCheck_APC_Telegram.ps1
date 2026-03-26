@@ -58,3 +58,12 @@ Check-EventAndNotify -eventId 174 -messageText "Power Outage on $($env:COMPUTERN
 
 # Controllo dell'evento 61455 (Alimentazione ripristinata)
 Check-EventAndNotify -eventId 61455 -messageText "Power restored on $($env:COMPUTERNAME)"
+
+# Check event 61452 (Battery test successful)
+Check-EventAndNotify -eventId 61452 -messageText "Automatic battery test successful - Battery installation date *changeme*"
+
+# Check event 61453 (Power disturbance)
+Check-EventAndNotify -eventId 61453 -messageText "APC - Power disturbance detected"
+
+# Check event 172 (Overvoltage)
+Check-EventAndNotify -eventId 172 -messageText "APC - Overvoltage detected"
