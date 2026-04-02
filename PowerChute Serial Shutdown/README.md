@@ -1,4 +1,4 @@
-Testing version that should support the new version of PowerChute
+Testing version that should support PowerChute Serial Shutdown
 
 The new app is logging events under the source APCPBEAgent.
 
