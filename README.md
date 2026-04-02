@@ -8,6 +8,9 @@ Working on PowerChute Personal Edition 3.1.0
 # PowerChute Serial Shutdown
 The ‘PowerChute Serial Shutdown’ folder contains a script compatible with the new ‘Serial Shutdown’ version.
 
+
+# Screenshot
+
 <div align="center">
   
 Gotify example (IT)
