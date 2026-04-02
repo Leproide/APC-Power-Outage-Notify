@@ -5,6 +5,9 @@ Each event logged by the application should trigger the script.
 
 Working on PowerChute Personal Edition 3.1.0
 
+# New PowerChute
+Inside the "PowerChute Serial Shutdown" folder you can find a script version can work with the new "Serial Shutdown" version.
+
 <div align="center">
   
 Gotify example (IT)
