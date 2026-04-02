@@ -6,7 +6,7 @@ Each event logged by the application should trigger the script.
 Working on PowerChute Personal Edition 3.1.0
 
 # PowerChute Serial Shutdown
-Inside the "PowerChute Serial Shutdown" folder you can find a script version can work with the new "Serial Shutdown" version.
+The ‘PowerChute Serial Shutdown’ folder contains a script compatible with the new ‘Serial Shutdown’ version.
 
 <div align="center">
   
